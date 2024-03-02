@@ -1,6 +1,7 @@
-#NECESSARY PREREQUISITES
+# NECESSARY PREREQUISITES
 
 import numpy as np
+
 
 # The fuction defined below takes a quadratic ax^2 + bx + c = 0 and, by using the determinant, finds and prints the number of roots of the equation.
 
@@ -14,7 +15,6 @@ def count_roots(a, b, c):
     else:
         print("There are two real roots to this quadratic.")
 
-count_roots(5, 8, -2)
 
 # The fuction defined below takes a quadratic ax^2 + bx + c = 0 and, by using the determinant, finds and prints the roots of the equation if it has any.
 
@@ -33,5 +33,3 @@ def value_roots(a, b, c):
         sroot = min(pos_sol, neg_sol)
         print(f"The larger root of this quadratic is ", lroot)
         print(f"The smaller root of this quadratic is ", sroot)
-
-value_roots(5, 8, -2)
