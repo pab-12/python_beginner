@@ -1,4 +1,4 @@
-WARNING: Extremely beginner level code, may be subject of mockery
+WARNING: Extremely beginner level code, may be subject to mockery
 
 Please do not laugh :(
 
