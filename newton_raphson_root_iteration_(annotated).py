@@ -45,3 +45,4 @@ print('root = {}, absolute error = {}, number of iterations = {}'.format(result[
 
 # There are multiple other reasons the Newton-Rhapson method can be ineffective. If there are still issues after adjusting the starting value a number of times, I would look into
 # the behaviour of the function and how the method works, and assess if the Newton-Rhapson method would be an effective method for finding the roots in that particular case.
+
