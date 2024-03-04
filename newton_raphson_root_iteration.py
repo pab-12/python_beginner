@@ -30,10 +30,10 @@ def newton_raphson(x0, 𝜖=1e-10, max_iterations=100):
     
     return xr_plus1, abs(xr_plus1 - xr), r+1
 
-# To perform the newton-raphson iteration method, replace the below elements with the desired parameters, a being the starting value for the iteration, 
-# b being the tolerance value controlling how accurate the result should be, and c being the max number of iterations before the iteration stops, even before finding a root.
+# To perform the method, replace the elements in the function below with the desired parameters, a being the starting value for the iteration,
+# b being the tolerance value determining how accurate the result will be, and c being the max number of iterations before the iteration stops, even before finding a root.
 
-# (If unsure, exclude the second and third elements, which will result in the funtion using the default settings, the tolerance value 𝜖 = 1e-10 and the max iterations = 100.)
+# (If unsure, exclude the second and third elements, which will result in the function using the default recommended settings, the tolerance value 𝜖 = 1e-10 and the max iterations = 100.)
 
 result = newton_raphson(a, b, c)
 
@@ -43,5 +43,5 @@ print('root = {}, absolute error = {}, number of iterations = {}'.format(result[
 #  - Starting values very far away from the root(s) can cause the method to diverge.
 #  - Selecting stationary values (where f'(x0) = 0) will cause issues.
 
-# There are multiple other reasons the Newton-Rhapson method can be ineffective. If there are still issues after ajusting the starting value a number of times, I would look into
-# the behaviour of the function, and assess if the Newton-Rhapson method would be an effective method for finding the roots.
+# There are multiple other reasons the Newton-Rhapson method can be ineffective. If there are still issues after adjusting the starting value a number of times, I would look into
+# the behaviour of the function and how the method works, and assess if the Newton-Rhapson method would be an effective method for finding the roots in that particular case.
