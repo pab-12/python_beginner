@@ -21,4 +21,3 @@ def value_roots(a, b, c):
         print(f"The larger real root of this quadratic is ", lroot)
         print(f"The smaller real root of this quadratic is ", sroot)
 
- 
