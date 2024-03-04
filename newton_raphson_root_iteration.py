@@ -35,7 +35,7 @@ def newton_raphson(x0, 𝜖=1e-10, max_iterations=100):
 
 # (If unsure, exclude the second and third elements, which will result in the funtion using the default settings, the tolerance value 𝜖 = 1e-10 and the max iterations = 100.)
 
-result = newton_raphson(1.289)
+result = newton_raphson(a, b, c)
 
 print('root = {}, absolute error = {}, number of iterations = {}'.format(result[0], result[1], result[2]))
 
