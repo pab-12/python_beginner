@@ -46,7 +46,7 @@ def LR_eigenvalues(M, max_iterations=500, tol=1e-10, verbose=False):
             print()
             
         # Here it is checking, using the numpy norm function, that the norm (of infinite order) of the difference between the diagonals of the U and
-        # the previous iteration's U is lower than the tol value stated, and if so, returns the diagonal of U as the eigenvalues of the matrix supplied.
+        # the previous iteration's U is lower than the tol value stated, and if so, returns the diagonal of U as the eigenvalues of the matrix M supplied.
         
         if i > 0 and norm(np.diagonal(U) - U_diag_previous, np.inf) < tol:  
             return np.diagonal(U), i+1
@@ -58,9 +58,9 @@ def LR_eigenvalues(M, max_iterations=500, tol=1e-10, verbose=False):
         
     return 'Unsuccessful. Max iterations reached before eigenvalues found.', i+1
 
-# Replace the square matrix below with the square matrix you wish to find the real eigenvalues of.
+# Replace the square matrix X below with the square matrix you wish to find the real eigenvalues of.
 
-Matrix = np.array([[1, 2, -3, 8, 3],
+X = np.array([[1, 2, -3, 8, 3],
               [0, 1, 0, 3, 0],
               [0, 2, 1, 6, -1],
               [6, -3, 0, 5, 2],
@@ -71,7 +71,7 @@ Matrix = np.array([[1, 2, -3, 8, 3],
 # - Generally, the lower the tol value, the more iterations needed to find the eigenvalues.
 # - Setting verbose to True will print the iteration at each stage.
 
-e = LR_eigenvalues(Matrix)
+e = LR_eigenvalues(X)
 
 print('Eigenvalues:', e[0])
 print('Number of iterations:', e[1])
