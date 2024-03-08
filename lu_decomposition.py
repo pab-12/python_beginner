@@ -18,11 +18,11 @@ def LU_decompose(A):
     
     return L, U
 
-A = np.array([[7, -18, 1], [34, 8, 4], [-27, -46, 18]])
+X = np.array([[7, -18, 1], [34, 8, 4], [-27, -46, 18]])
 
-L, U = LU_decompose(A)
+L, U = LU_decompose(X)
 
-print('A =')
+print('X =')
 print(A)
 print()
 print('L =')
@@ -31,7 +31,7 @@ print()
 print('U =')
 print(U)
 
-# Checking LU = A
+# Checking LU = X
 
 print('Check: LU =')
 print(L @ U)
