@@ -31,7 +31,7 @@ def newton_raphson(x0, 𝜖=1e-10, max_iterations=100):
     return xr_plus1, abs(xr_plus1 - xr), r+1
 
 # To perform the method, replace the elements in the function below with the desired parameters, a being the starting value for the iteration,
-# b being the tolerance value determining how accurate the result will be, and c being the max number of iterations before the method stops, even before finding a root.
+# b being the tolerance value determining how precise the result will be, and c being the max number of iterations before the method stops, even before finding a root.
 
 # (If unsure, exclude the second and third elements, which will result in the function using the default recommended settings, the tolerance value 𝜖 = 1e-10 and the max iterations = 100.)
 
