@@ -37,13 +37,13 @@ def LR_eigenvalues(M, max_iterations=500, tol=1e-10, verbose=False):
     return 'Unsuccessful. Max iterations reached before eigenvalues found.', i+1
 
 
-A = np.array([[1, 2, -3, 8, 3],
+X = np.array([[1, 2, -3, 8, 3],
               [0, 1, 0, 3, 0],
               [0, 2, 1, 6, -1],
               [6, -3, 0, 5, 2],
               [2, 1, 2, 3, -4]])
 
-e = LR_eigenvalues(A)
+e = LR_eigenvalues(X)
 
 print('Eigenvalues:', e[0])
 print('Number of iterations:', e[1])
