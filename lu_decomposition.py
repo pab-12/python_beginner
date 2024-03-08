@@ -23,7 +23,7 @@ X = np.array([[7, -18, 1], [34, 8, 4], [-27, -46, 18]])
 L, U = LU_decompose(X)
 
 print('X =')
-print(A)
+print(X)
 print()
 print('L =')
 print(L)
