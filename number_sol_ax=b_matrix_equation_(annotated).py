@@ -4,12 +4,12 @@ import numpy as np
 from numpy.linalg import pinv
 
 # The function below returns the number of solutions of the matrix equation Ax=b when given the matrix A and the vector b as input.
-# It uses one of the fundemental properties of the Moore-Penrose pseudoinverse, that is, where Ap is the pseudoinverse;
+# It uses one of the fundamental properties of the Moore-Penrose pseudoinverse, that is, where Ap is the pseudoinverse;
 # Ax = b has a solution if and only if A*Ap*b = b, and if so, then x = Ap*b + (I- Ap*A)w, where w is arbitrary.
 
 def number_of_solutions(A, b):
     
-    # The pinv function returns the moore-penrose pseudo-inverse using the SVD (singular value decomposition).
+    # The pinv function returns the Moore-Penrose pseudo-inverse using the SVD (singular value decomposition).
     Ap = pinv(A)
     
     # Assigning the dimensions of A
