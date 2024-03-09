@@ -9,7 +9,7 @@ from numpy.linalg import pinv
 # The method uses a property of the Moore-Penrose pseudoinverse.
 # See number_sol_ax=b_matrix_equation_(annotated).py for information on the fundamentals.
 
-def number_of_solutions(A, b):
+def general_solution(A, b):
     # See number_sol_ax=b_matrix_equation_(annotated).py for information on how the method finds how many solutions the equation has.
     Ap = pinv(A)
     m, n = A.shape
@@ -39,5 +39,5 @@ def number_of_solutions(A, b):
 Matrix_A = np.array([[3, 7, 4], [-3, -7, -4], [6, 14, 8]])
 Vector_b = np.array([[2], [-2], [4]])
 
-print(number_of_solutions(Matrix_A, Vector_b))
+print(general_solution(Matrix_A, Vector_b))
 
