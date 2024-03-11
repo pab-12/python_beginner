@@ -3,7 +3,7 @@
 import numpy as np
 from numpy.linalg import norm
 
-# The optional prerequisite below makes the iterations more readable, as it supresses the scientific notation of very large/small numbers.
+# The optional prerequisite below makes the iterations more readable, as it print values close to zero as 0.
 np.set_printoptions(suppress=True)
 
 # First, defining the LU decomposition. See lu_decomposition_(annotated).py in the repository for information.
