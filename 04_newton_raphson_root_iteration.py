@@ -21,6 +21,6 @@ def newton_raphson(x0, 𝜖=1e-10, max_iterations=100):
     
     return xr_plus1, abs(xr_plus1 - xr), r+1
 
-result = newton_raphson(a, b, c)
+result = newton_raphson(0.5)
 print('root = {}, absolute error = {}, number of iterations = {}'.format(result[0], result[1], result[2]))
 

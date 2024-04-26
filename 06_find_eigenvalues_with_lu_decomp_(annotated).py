@@ -6,7 +6,7 @@ from numpy.linalg import norm
 # The optional prerequisite below makes the iterations more readable, as it print values close to zero as 0.
 np.set_printoptions(suppress=True)
 
-# First, defining the LU decomposition. See lu_decomposition_(annotated).py in the repository for information.
+# First, defining the LU decomposition. See file 05(annotated).py in the repository for information.
 
 def LU_decompose(A):
     m, n = A.shape

@@ -6,11 +6,10 @@ from numpy.linalg import pinv
 # The function below returns the solution of the matrix equation Ax=b when given the matrix A and the vector b as input.
 # If there are infinite solutions, it will return the general solution, and if there are no solutions, it will return a blank array.
 
-# The method uses a property of the Moore-Penrose pseudoinverse.
-# See number_sol_ax=b_matrix_equation_(annotated).py for information on the fundamentals.
+# The method uses a property of the Moore-Penrose pseudoinverse. See file 07(annotated).py for information on the fundamentals.
 
 def general_solution(A, b):
-    # See number_sol_ax=b_matrix_equation_(annotated).py for information on how the method finds how many solutions the equation has.
+    # See file 07(annotated).py for information on how the method finds how many solutions the equation has.
     Ap = pinv(A)
     m, n = A.shape
     

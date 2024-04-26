@@ -3,9 +3,9 @@
 import numpy as np
 from numpy.linalg import pinv
 
-# The purpose of this code is to test whether the solution found using the function from sol_ax=b_matrix_equation.py is correct or not.
-# First, importing the general solution function. See sol_ax=b_matrix_equation_(annotated).py and number_ sol_ax=b_matrix_equation_(annotated).py
-# for more information on the function and usage of the Moore-Penrose pseudoinverse.
+# The purpose of this code is to test whether the solution found using the function in file 08.py is correct or not.
+# First, importing the general solution function. See file 08(annotated).py and file 07(annotated).py. for
+# more information on the function and usage of the Moore-Penrose pseudoinverse.
 
 def general_solution(A, b):
     Ap = pinv(A)
@@ -36,7 +36,7 @@ def test_general_solution(A, b):
     if len(gen_sol_result) == 2:
         
         # Using a random number generator to define an arbitrary w (as the general solution is x = c + Nw for arbitrary w, see
-        # sol_ax=b_matrix_equation_(annotated).py for more information).
+        # file 08(annotated).py for more information).
         rng = np.random.default_rng()
         test_correct_count = 0
         
