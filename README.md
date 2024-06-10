@@ -3,4 +3,4 @@
 - MatPlotLib: 10-11
 
 
-WARNING: Beginner level code, may be subject to mockery. Please do not laugh :(
+WARNING: Some beginner level code here may be subject to mockery. Please do not laugh :(
